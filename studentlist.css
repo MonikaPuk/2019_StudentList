@@ -21,3 +21,20 @@ body {
     background-color: #588c39;
     color: #c0b1c6  
 }
+
+article{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px #ccc;
+    padding: 10px 30px;
+    margin: 20px;
+}
+
+#students{
+    display: flex;
+    flex-wrap: wrap;
+}
