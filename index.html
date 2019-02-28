@@ -7,16 +7,49 @@
     <link rel="stylesheet" href="studentlist.css" type="text/css">
 </head>
 <body>
-  <h1>Students 1991</h1>
+  <div id="status">
+    <h1>Student status</h1>
+    <p>Gryffindor:
+      <span id='g_count'></span></p>
+    <p>Hufflepuff:
+      <span id='h_count'></span></p>
+    <p>Ravenclaw:
+      <span id='r_count'></span></p>
+    <p>Slytherin: 
+      <span id='s_count'></span></p>
+    <p>Currentely expelled: 
+      <span id='expelled_count'> 0 </span></p>
+  </div>
+  <nav>
+    <p class='house_btn' id="Gryffindor">Gryffindor</p>
+    <p class='house_btn' id="Hufflepuff">Hufflepuff</p>
+    <p class='house_btn' id="Ravenclaw">Ravenclaw</p>
+    <p class='house_btn' id="Slytherin">Slytherin</p>
+  </nav>
+  <label for="sort_dropdown">Alphabetically sort by: </label>
+  <select id="sort_dropdown" onchange="clickSortByFirst(this)">
+          <option value="sort_firstName"> First name</option>
+          <option value="sort_lastName">Last name</option>      
+      </select>
+
   <div id='students'> </div>
   <template id='tmpl_student'>
     <article id="single_student">
         <p id='first_name'>FIRST NAME</p>
         <p id="last_name">LAST NAME</p>
+        <img src="" alt="house logo" id="house_logo">
         <p id='house'>HOUSE</p>
+        <button id='expell_btn'>Expell!</button>
     </article>
   </template>
-    
+
+  <div id="modal" class="hide">
+      <div id='modal-content'>
+          <h2>NAME</h2>
+      <p id="house_mod"></p>
+      <img src="" alt='student_photo' id='student_photo'>
+    </div>
+  </div>
   <script src="studentlist.js"></script>
 </body>
 </html>

@@ -23,10 +23,12 @@ body {
 }
 
 article{
-    text-align: center;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 240px;
+    height: 336px;
     border: 1px solid #eee;
     border-radius: 5px;
     box-shadow: 0 5px 8px #ccc;
@@ -38,3 +40,48 @@ article{
     display: flex;
     flex-wrap: wrap;
 }
+
+nav{
+    display: flex;
+}
+
+.house_btn{
+    padding: 2em;
+}
+
+#house_logo{
+    width: 150px;
+}
+
+
+#modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 15px;
+    /* display: flex; */
+  }
+
+
+  #modal-content{
+    background-color: white;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 15px;
+    width: 240px;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 34vw;
+    top: 17vh;
+  }
+
+  .hide{
+    display: none;
+  }
