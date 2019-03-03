@@ -45,9 +45,6 @@ nav{
     display: flex;
 }
 
-.house_btn{
-    padding: 2em;
-}
 
 #house_logo{
     width: 150px;
@@ -63,16 +60,16 @@ nav{
     background-color: rgba(0,0,0,.3);
     border-radius: 15px;
     /* display: flex; */
-  }
+}
 
 
-  #modal-content{
+#modal-content{
     background-color: white;
     margin: 2em;
     padding: 2em;
     border-radius: 15px;
     width: 240px;
-    height: 336px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,17 +77,17 @@ nav{
     position: fixed;
     left: 34vw;
     top: 17vh;
-  }
+}
 
-  .hide{
+.hide{
     display: none;
-  }
+}
 #student_photo{
     border: 6px solid black;
     border-radius: 2em;
 }
 
- i {
+i {
     color: green;
 }
 
@@ -100,10 +97,40 @@ nav{
     border-radius: 2em;
     width: 200px;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover{
+    background-color: #FF6F71;
+    color: white;
+}
 
+.house_btn{
+    padding: 2em;
+    transition-duration: 0.4s;
+    border: 1px solid #eee;
+    border-radius: 2em;
+}
+#Gryffindor:hover{
+    background-color: #FF493C;
+    color: white;
+}
+
+#Hufflepuff:hover{
+    background-color: #FFA35A;
+    color: white;
+}
+#Ravenclaw:hover{
+    background-color: #003276;
+    color: white;
+}
+#Slytherin:hover{
+    background-color: #038A00;
+    color: white;
+}
+#All:hover{
+    background-color: black;
+    color: white;
 }
 
 #student_photo{
@@ -134,3 +161,25 @@ video{
 	100% { width:200px; }
 }
 
+#squad{
+    padding: 5px;
+    transition-duration: 0.4s;
+    border: 1px solid #eee;
+    border-radius: 2em;
+}
+#squad:hover{
+    background-color: rgb(135, 224, 135);
+    color: white;
+}
+
+#squad_remove{
+    padding: 5px;
+    transition-duration: 0.4s;
+    border: 1px solid #eee;
+    border-radius: 2em;
+}
+
+#squad_remove:hover{
+    background-color: red;
+    color: white;
+}

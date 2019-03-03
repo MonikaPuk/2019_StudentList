@@ -73,7 +73,6 @@ function bloodStatus(bloodListData) {
 
 
 function changeBlood() {
-  console.log("I'm in")
   allStudents.forEach(student => {
     if (student.blood === 'half'){
       student.blood = 'pure';
