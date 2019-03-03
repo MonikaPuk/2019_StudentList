@@ -54,13 +54,13 @@ function init() {
 }
 
 function getJSON() {
- fetch('http://petlatkea.dk/2019/hogwarts/students.json')
+ fetch('https://petlatkea.dk/2019/hogwarts/students.json')
  .then(res => res.json())
  .then(prepObject);
 }
 
 function getJSONB() {
-  fetch('http://petlatkea.dk/2019/hogwarts/families.json')
+  fetch('https://petlatkea.dk/2019/hogwarts/families.json')
   .then(res => res.json())
   .then(bloodStatus);
 }
