@@ -85,3 +85,52 @@ nav{
   .hide{
     display: none;
   }
+#student_photo{
+    border: 6px solid black;
+    border-radius: 2em;
+}
+
+ i {
+    color: green;
+}
+
+.btn{
+    padding: 1em;
+    border: salmon 1px solid;
+    border-radius: 2em;
+    width: 200px;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+}
+
+#student_photo{
+    width: 108px;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#warning{
+    width: 50vw;
+    animation: pulse linear .9s infinite;
+    position: fixed;
+    left: 25vw;
+    z-index: 2;
+    display: none;
+}
+
+@keyframes pulse {
+	0% { width:200px; } 
+	50% { width:500px; } 
+	100% { width:200px; }
+}
+

@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Student List 2</title>
     <link rel="stylesheet" href="studentlist.css" type="text/css">
 </head>
 <body>
   <div id="status">
     <h1>Student status</h1>
+    <p>All students: <span id='all_count'></span></p>
     <p>Gryffindor:
       <span id='g_count'></span></p>
     <p>Hufflepuff:
@@ -21,6 +23,14 @@
       <span id='expelled_count'> 0 </span></p>
   </div>
   <nav>
+    <video >
+          <source src="images/hack_video.mp4" type="video/mp4">
+                  </video>
+                  <img src="images/warning.jpg" alt="warning" id='warning'>
+                  <audio id='audio'>
+                      <source src="images/warning_sound.mov" type="audio/mp3" >
+                    </audio>
+    <p class='house_btn' id="All">All students</p>
     <p class='house_btn' id="Gryffindor">Gryffindor</p>
     <p class='house_btn' id="Hufflepuff">Hufflepuff</p>
     <p class='house_btn' id="Ravenclaw">Ravenclaw</p>
@@ -31,7 +41,7 @@
           <option value="sort_firstName"> First name</option>
           <option value="sort_lastName">Last name</option>      
       </select>
-
+<p id="blood_change_btn" class="btn">Change blood!</p>
   <div id='students'> </div>
   <template id='tmpl_student'>
     <article id="single_student">
@@ -39,7 +49,7 @@
         <p id="last_name">LAST NAME</p>
         <img src="" alt="house logo" id="house_logo">
         <p id='house'>HOUSE</p>
-        <button id='expell_btn'>Expell!</button>
+        <button id='expel_btn'>Expell!</button>
     </article>
   </template>
 
@@ -48,6 +58,11 @@
           <h2>NAME</h2>
       <p id="house_mod"></p>
       <img src="" alt='student_photo' id='student_photo'>
+      <p id='blood_type'></p>
+      <i class="fas fa-check-circle hide"></i>
+      <p id='squad'>Appoint to the Inquisitorial Squad</p>
+      <p id='squad_remove' class="hide">Remove from the Inquisitorial Squad</p>
+
     </div>
   </div>
   <script src="studentlist.js"></script>
