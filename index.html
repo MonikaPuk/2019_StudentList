@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Student List 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Passion+One" rel="stylesheet">
     <link rel="stylesheet" href="studentlist.css" type="text/css">
 </head>
 <body>
   <div id="status">
-    <h1>Student status</h1>
+    <h1>Student status in Hogwarts School of Witchcraft and Wizardry</h1>
+    <p>The amount of students in each house. Gets updated everytime the user expels a student, but doesn't get affected neither by filtering nor sorting.</p>
+  <div id='inner_status'>
     <p>All students: <span id='all_count'></span></p>
     <p>Gryffindor:
       <span id='g_count'></span></p>
@@ -21,7 +24,8 @@
       <span id='s_count'></span></p>
     <p>Currentely expelled: 
       <span id='expelled_count'> 0 </span></p>
-  </div>
+    </div>
+    </div>
   <nav>
     <video >
           <source src="images/hack_video.mp4" type="video/mp4">
@@ -30,6 +34,7 @@
                   <audio id='audio'>
                       <source src="images/warning_sound.mov" type="audio/mp3" >
                     </audio>
+                    <h2>Filter by house:</h2>
     <p class='house_btn' id="All">All students</p>
     <p class='house_btn' id="Gryffindor">Gryffindor</p>
     <p class='house_btn' id="Hufflepuff">Hufflepuff</p>
@@ -41,7 +46,9 @@
           <option value="sort_firstName"> First name</option>
           <option value="sort_lastName">Last name</option>      
       </select>
-<p id="blood_change_btn" class="btn">Change blood!</p>
+      <div class="blood_change--div">
+      <p>Click this button to change the blood status from 'muggle' and 'half' to 'pure'. Pure blood students will get randomly 'muggle' or 'pure'.</p>
+<p id="blood_change_btn" class="btn">Change blood!</p></div>
   <div id='students'> </div>
   <template id='tmpl_student'>
     <article id="single_student">

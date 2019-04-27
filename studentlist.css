@@ -1,6 +1,12 @@
 body {
     background-color: aliceblue;
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
 }
+h1 {
+    font-family: 'Passion One', cursive;;
+    }
+
 
 .gryffindor {
     background-color: #ce3a0a;
@@ -28,7 +34,7 @@ article{
     justify-content: space-evenly;
     align-items: center;
     width: 240px;
-    height: 336px;
+    height: 400px;
     border: 1px solid #eee;
     border-radius: 5px;
     box-shadow: 0 5px 8px #ccc;
@@ -39,6 +45,8 @@ article{
 #students{
     display: flex;
     flex-wrap: wrap;
+    width: 90vw;
+    justify-content: center;
 }
 
 nav{
@@ -50,6 +58,12 @@ nav{
     width: 150px;
 }
 
+#inner_status{
+    padding: 10px;
+    width: 400px;
+    border: solid 1px blue;
+    border-radius: 1em;
+}
 
 #modal{
     position: fixed;
@@ -94,22 +108,28 @@ i {
 .btn{
     padding: 1em;
     border: salmon 1px solid;
-    border-radius: 2em;
-    width: 200px;
+    border-radius: 1em;
+    width: 100px;
     cursor: pointer;
     text-align: center;
+    margin: 10px;
 }
 
+.blood_change--div{
+ width: 500px;
+ display: flex;
+ flex-direction: row;
+}
 .btn:hover{
     background-color: #FF6F71;
     color: white;
 }
 
 .house_btn{
-    padding: 2em;
+    padding: 1em;
     transition-duration: 0.4s;
     border: 1px solid #eee;
-    border-radius: 2em;
+    border-radius: 0.5em;
 }
 #Gryffindor:hover{
     background-color: #FF493C;
