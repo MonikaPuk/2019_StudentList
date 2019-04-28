@@ -25,7 +25,9 @@ let currentStudent;
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-
+  document.querySelector('.ok_btn').addEventListener('click', () =>{
+    document.querySelector('#modal_first').classList.add('hide')
+  })
   document.querySelector('#Gryffindor').addEventListener('click', () => {
     houseFilter = 'Gryffindor';
     filterList();
